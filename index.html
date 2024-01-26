@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Juego de memoria</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+</head>
+<body>
+    <img id="logo" src="./src/images/logos/logo-top-autorneovaB.png" alt="Logo">
+    <h1>Celebra San Valentin con nosotros</h1>
+    <h2>Y enamorate de nuestras promociones</h2>
+    <h3>Sigue las instrucciones</h3>
+    <ol>
+        <li>Contrata o Renueva el servicio de Rastreo Satelital</li>
+        <li>Da click en el boton "Jugar"</li>
+        <li>El juego dura 30 segundos</li>
+        <li>Este es un juego de memoria donde tienes que encontrar los pares</li>
+        <li>Entre los diferentes pares encuentra el par que tiene la promoción</li>
+        <li>Una vez terminado el juego publica una captura en Facebook o Instagram</li>
+        <li>En tu publicación usa el hastag #AutorenovaMeEnamora y reclama tu premio</li>
+    </ol>
+    <button id="iniciar">JUGAR</button>
+    <div id="countdown">00:30</div>
+    <div id="alert" class="alert alert-danger" role="alert" style="display: none;"></div>
+    <div id="tablero"></div>
+    <button id="whatsapp">
+        <img src="./src/images/logos/logo_whatsapp.png" alt="Logo de WhatsApp">
+        Envía tu captura a nuestro WhatsApp
+    </button>
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="https://autorenova.com/" target="_blank" >
+                        <img src="./src/images/logos/logo_autorenovaB.png" alt="Logo de la empresa" style="width: 100px; height: 100px;">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.google.com/maps/place/AutoRenovA+Rastreo+Satelital/@-2.1405615,-79.9280766,15z/data=!4m6!3m5!1s0x902d729ad124a2a1:0x3d4622a6e507eb60!8m2!3d-2.1405615!4d-79.9280766!16s%2Fg%2F1pzvk2ptc?entry=ttu" target="_blank" >
+                        <img src="./src/images/logos/logo_ubi.png" alt="Ubicación de la empresa" style="width: 25px; height: 25px;">
+                    </a>
+                    <p style="display: inline;">Av. Juan Tanca Marengo Km 6.5 Diagonal al  Colegio Americano</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://wa.me/0980050644?text=He%20ganado%20el%20juego%20de%20memoria!" target="_blank">
+                        <img src="./src/images/logos/logo_whatsapp.png" alt="Logo de WhatsApp" style="width: 25px; height: 25px;">
+                    </a>
+                    <p style="display: inline;">0980050644</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.instagram.com/autorenova.ec/" target="_blank" >
+                        <img src="./src/images/logos/logo_instagram.png" alt="Logo de Instagram" style="width: 22px; height: 22px;">
+                    </a>
+                    <a href="https://www.facebook.com/autorenova.ec/" target="_blank" >
+                        <img src="./src/images/logos/logo_facebook.png" alt="Logo de Facebook" style="width: 20px; height: 20px;">
+                    </a>
+                    <p style="display: inline;">@autorenova.ec</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>&copy; Todos los derechos reservados 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/javascript/game.js"></script>
+</body>
+</html>
