@@ -1,4 +1,4 @@
-// Variables globales
+//Variables globales
 var timeLeft = 30;
 var elem = document.getElementById('countdown');
 var alertBox = document.getElementById('alert');
@@ -11,17 +11,15 @@ var winGameSound = new Audio('./src/sounds/win-game.mp3');
 var endTimeSound = new Audio('./src/sounds/end-time.mp3');
 var clockTickingSound = new Audio('./src/sounds/clock-tiking.mp3');
 var gameOver = false;
-
-// Tiempo restante en milisegundos
 var tiempoRestante = 30 * 1000;
 
-// Event listeners
+//click para el boton iniciar el juego
 document.getElementById('iniciar').addEventListener('click', function() {
     clockTickingSound.play();
     gameStarted = true;
     timerId = setInterval(countdown, 1000);
 });
-
+//click para permitir voltear las cartas
 document.getElementById('tablero').addEventListener('click', function() {
     if (gameStarted) {
         flipcardSound.play();
@@ -39,12 +37,12 @@ document.getElementById('tablero').addEventListener('click', function() {
         return;
     }
 });
-
+//click para abrir whatsapp
 document.getElementById('whatsapp').addEventListener('click', function() {
     window.open('https://wa.me/0980050644?text=He%20ganado%20el%20juego%20de%20memoria!', '_blank');
 });
 
-// Funciones relacionadas con el juego
+//Funcion conteo regresivo
 function countdown() {
     if (timeLeft == 0) {
         gameOver = true;
@@ -63,15 +61,15 @@ function countdown() {
         timeLeft--;
     }
 }
-
+//Funcion para restaurar el juego
 function restartGame() {
     clockTickingSound.pause();
     clockTickingSound.currentTime = 0;
     timeLeft = 30;
     gameStarted = false;
-    gameOver = false; // Añade esta línea
-    elem.innerHTML = '00:30'; // Añade esta línea
-    elem.style.display = 'block'; // Asegura que el reloj se muestre
+    gameOver = false;
+    elem.innerHTML = '00:30';
+    elem.style.display = 'block';
     paresEncontrados = 0;
     cartas = desordenar(cartas);
 
