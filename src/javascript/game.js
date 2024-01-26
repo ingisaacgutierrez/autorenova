@@ -126,6 +126,8 @@ var paresEncontrados = 0;
 // Agrega las cartas al tablero en el orden desordenado
 var tablero = document.getElementById('tablero');
 var promoAleatoria = seleccionarPromoAleatoria();
+var bloquearTablero = false;
+
 for (var i = 0; i < cartas.length; i++) {
     var carta = document.createElement('div');
     carta.className = 'card';
@@ -137,7 +139,7 @@ for (var i = 0; i < cartas.length; i++) {
     carta.dataset.valor = cartas[i];
     carta.innerHTML = '<img src="./src/images/autorenova-black-card.png" alt="Card ' + (i + 1) + '">';
     carta.addEventListener('click', function() {
-        if (gameOver) {
+        if (gameOver || bloquearTablero) {
             flipcardSound.pause();
             return;
         }
@@ -153,11 +155,12 @@ for (var i = 0; i < cartas.length; i++) {
             carta1 = this;
         } else {
             carta2 = this;
+            bloquearTablero = true;
             if (carta1 !== carta2 && carta1.dataset.valor === carta2.dataset.valor) {
                 paresEncontrados++;
                 carta1.classList.add('encontrado');
                 carta2.classList.add('encontrado');
-                // Si se encontró un par de promos
+                bloquearTablero = false;
                 if (carta1.dataset.valor === promoAleatoria) {
                     foundPromoSound.play();
                 } else {
@@ -179,12 +182,14 @@ for (var i = 0; i < cartas.length; i++) {
                     }
                     carta1 = null;
                     carta2 = null;
-                }, 1000);
+                    bloquearTablero = false;
+                }, 500);
             }
         }
     });
     tablero.appendChild(carta);
 }
+
 
 
 // Función de utilidad para desordenar un array
