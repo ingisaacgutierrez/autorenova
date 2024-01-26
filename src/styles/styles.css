@@ -42,6 +42,22 @@ h1, h2, h3, ol {
     padding: 10px;
 }
 
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+ol{
+    font-size: 30px;
+}
+
 h1, h2 {
     color: #FFC0CB;
 }
@@ -52,14 +68,14 @@ h3 {
 }
 
 #countdown {
-    padding:10px 100px;
+    padding:10px 150px;
     border: solid 4px rgb(58, 56, 56);
     border-radius: 8px;
     box-shadow: 0 0 16px rgba(0, 0,0, .2);
     background-color: black;
     margin: 40px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     color: red;
     text-align: center;
     justify-content: center;
@@ -67,9 +83,9 @@ h3 {
 
 ol {
     list-style-type: decimal;
-    padding: 15px 50px;
+    padding: 50px 100px;
     text-align: left;
-    width: 650px;
+    width: 90%;
     margin-bottom: 50px;
     border-radius: 8px;
     border: solid 1px rgb(255, 255, 255);
@@ -82,12 +98,12 @@ ol {
     color: #25D366;
     border-radius: 10px;
     border: solid 1px #25D366;
-    padding: 15px 32px;
+    padding: 20px 80px;
     text-align: center;
     text-decoration: none;
     margin-top: 50px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -106,8 +122,8 @@ ol {
 }
 
 .card {
-    width: 100px;
-    height: 100px;
+    width: 190px;
+    height: 190px;
 }
 
 #whatsapp {
@@ -120,7 +136,7 @@ ol {
     padding: 10px 20px;
     margin: 50px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 45px;
 }
 
 #whatsapp:hover {
@@ -129,8 +145,8 @@ ol {
 }
 
 #whatsapp img {
-    width: 24px;
-    height: 24px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
 
@@ -140,6 +156,7 @@ footer {
     color: rgb(255, 255, 255);
     text-align: center;
     position:relative;
+    font-size: 30px;
 }
 
 /* Media queries for responsiveness */
@@ -161,7 +178,7 @@ footer {
     }
 
     ol {
-        width: 80%;
+        justify-content: center;
     }
 
     #tablero {
@@ -170,8 +187,9 @@ footer {
     }
 
     .card {
-        width: 50px;
-        height: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 80px;
     }
 
     #whatsapp {
