@@ -183,7 +183,7 @@ for (var i = 0; i < cartas.length; i++) {
                     carta1 = null;
                     carta2 = null;
                     bloquearTablero = false;
-                }, 800);
+                }, 600);
             }
         }
     });
