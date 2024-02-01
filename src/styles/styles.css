@@ -161,7 +161,7 @@ footer {
 
 /* Media queries for responsiveness */
 
-@media (max-width: 650px) {
+@media screen and (max-width: 600px) {
     body {
         flex-direction: column;
     }
@@ -203,5 +203,52 @@ footer {
 
     footer {
         padding: 37.5px;
+    }
+}
+
+/* Media queries for tablet responsiveness */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        flex-direction: column;
+    }
+
+    h1, h2, h3, ol, #countdown, #tablero {
+        padding: 10px;
+        width: 95%;
+    }
+
+    #countdown {
+        padding: 10px 75px;
+        font-size: 30px;
+    }
+
+    ol {
+        justify-content: center;
+    }
+
+    #tablero {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+
+    #whatsapp {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    #whatsapp img {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer {
+        padding: 50px;
     }
 }
