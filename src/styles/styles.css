@@ -161,7 +161,7 @@ footer {
 
 /* Media queries for responsiveness */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     body {
         flex-direction: column;
     }
@@ -174,7 +174,6 @@ footer {
     #countdown {
         padding: 5px 50px;
         font-size: 20px;
-
     }
 
     ol {
