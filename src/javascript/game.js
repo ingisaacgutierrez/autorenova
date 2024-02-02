@@ -37,10 +37,6 @@ document.getElementById('tablero').addEventListener('click', function() {
         return;
     }
 });
-//click para abrir whatsapp
-document.getElementById('whatsapp').addEventListener('click', function() {
-    window.open('https://wa.me/0980050644?text=He%20ganado%20el%20juego%20de%20memoria!', '_blank');
-});
 
 //Funcion conteo regresivo
 function countdown() {
@@ -212,3 +208,8 @@ function showAlert(message, duration, alertClass) {
         alertBox.style.display = 'none';
     }, duration || 3000);
 }
+
+//click para abrir whatsapp
+document.getElementById('whatsapp').addEventListener('click', function() {
+    window.open('https://wa.me/+593980050644?text=He%20ganado%20el%20juego%20de%20memoria!', '_blank');
+});
