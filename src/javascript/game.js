@@ -184,8 +184,6 @@ for (var i = 0; i < cartas.length; i++) {
     tablero.appendChild(carta);
 }
 
-
-
 // Función de utilidad para desordenar un array
 function desordenar(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
