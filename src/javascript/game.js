@@ -209,5 +209,5 @@ function showAlert(message, duration, alertClass) {
 
 //click para abrir whatsapp
 document.getElementById('whatsapp').addEventListener('click', function() {
-    window.open('https://wa.me/+593980050644?text=He%20ganado%20el%20juego%20de%20memoria!%20LE%20envío%20la%20captura', '_blank');
+    window.open('https://wa.me/+593980050644?text=He%20ganado%20el%20juego%20de%20memoria!%20Le%20envío%20la%20captura', '_blank');
 });
