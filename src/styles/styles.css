@@ -176,8 +176,8 @@ footer {
         font-size: 20px;
     }
 
-    ol {
-        justify-content: center;
+    ol{
+        padding: 50px 100px
     }
 
     #tablero {
@@ -199,6 +199,53 @@ footer {
     #whatsapp img {
         width: 12px;
         height: 12px;
+    }
+
+    footer {
+        padding: 37.5px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    h1, h2, h3, ol, #countdown, #tablero {
+        padding: 5px;
+        width: 90%;
+    }
+
+    #countdown {
+        padding: 10px 10px;
+        font-size: 50px;
+        width: 50%;
+    }
+
+    ol{
+        padding: 50px 100px
+    }
+
+    #tablero {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 25px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 80px;
+    }
+
+    #whatsapp {
+        padding: 20px 50px;
+        font-size: 30px;
+    }
+
+    #whatsapp img {
+        width: 30px;
+        height: 30px;
     }
 
     footer {
