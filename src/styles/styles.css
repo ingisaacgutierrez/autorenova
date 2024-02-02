@@ -236,14 +236,14 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         padding: 15px;
         width: 30%;
-        grid-gap: 50px;
-        margin: 20px;
+        grid-gap: 20px;
     }
 
     .card {
-        width: 150px;
-        height: 150px;
-        display: block;
+        width: 100px;
+        height: 100px;
+        display: flex;
+
     }
 
     #whatsapp {
