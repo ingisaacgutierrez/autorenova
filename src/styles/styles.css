@@ -215,7 +215,7 @@ footer {
 
     body {
         flex-direction: column;
-        max-width: 1000px;
+        max-width: screen;
     }
 
     h1, h2, h3, ol, #countdown, #tablero {
