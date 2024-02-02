@@ -166,7 +166,7 @@ footer {
 
 /* Media queries for responsiveness */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     body {
         flex-direction: column;
     }
@@ -211,7 +211,7 @@ footer {
     }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 701px) and (max-width: 1024px) {
 
     body {
         flex-direction: column;
