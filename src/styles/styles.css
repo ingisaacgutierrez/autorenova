@@ -215,7 +215,6 @@ footer {
 
     body {
         flex-direction: column;
-        max-width: screen;
     }
 
     h1, h2, h3, ol, #countdown, #tablero {
@@ -235,8 +234,9 @@ footer {
 
     #tablero {
         grid-template-columns: repeat(4, 1fr);
-        padding: 25px;
-        width: auto;
+        padding: 15px;
+        width: 80%;
+        grid-gap: 20px;
     }
 
     .card {
