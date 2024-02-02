@@ -235,14 +235,15 @@ footer {
     #tablero {
         grid-template-columns: repeat(4, 1fr);
         padding: 15px;
-        width: 80%;
-        grid-gap: 20px;
+        width: 30%;
+        grid-gap: 50px;
+        margin: 20px;
     }
 
     .card {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 100px;
+        width: 150px;
+        height: 150px;
+        display: block;
     }
 
     #whatsapp {
