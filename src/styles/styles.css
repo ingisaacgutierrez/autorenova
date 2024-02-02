@@ -166,7 +166,7 @@ footer {
 
 /* Media queries for responsiveness */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     body {
         flex-direction: column;
     }
@@ -186,8 +186,9 @@ footer {
     }
 
     #tablero {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         padding: 25px;
+        width: 80%;
     }
 
     .card {
@@ -211,7 +212,7 @@ footer {
     }
 }
 
-@media (min-width: 701px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) {
 
     body {
         flex-direction: column;
@@ -243,7 +244,6 @@ footer {
         width: 100px;
         height: 100px;
         display: flex;
-
     }
 
     #whatsapp {
