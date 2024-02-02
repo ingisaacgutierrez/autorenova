@@ -242,7 +242,7 @@ footer {
     .card {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 80px;
+        grid-gap: 100px;
     }
 
     #whatsapp {
