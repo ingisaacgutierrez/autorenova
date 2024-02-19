@@ -21,7 +21,7 @@ function generarCupon() {
     document.getElementById("nombre").style.display = "none";
     document.getElementById("cupon").style.display = "block";
     document.getElementById("imagen").style.display = "block";
-    document.getElementById("cupon").innerHTML = "¡Felicitaciones " + nombre + ", has ganado! Tu cupón es: ";
+    document.getElementById("cupon").innerHTML = "¡Felicitaciones " + nombre + "! Tu cupón es de:";
     document.getElementById("imagen").src = cupon.imagen;
     enviarCorreo(nombre, cupon.codigo);
 }
