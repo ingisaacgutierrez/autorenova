@@ -1,0 +1,28 @@
+.cupon {
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px;
+}
+#img{
+    padding: 50px;
+}
+#imagen {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+.btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
